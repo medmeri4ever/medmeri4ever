@@ -508,8 +508,8 @@ class Field extends React.Component {
         fieldHistory: [ ...state.fieldHistory,
           {
             text: [
-              'Medmeri: Sahraoui mohammed Taher Amine.',
-              'Devra .: Which stand for dev-dragon, Adel merioua labdelli. find him here: https://www.linkedin.com/in/adel-labdelli-merioua-1a4219209/',
+              'Medmeri: Sahraoui mohammed Taher Amine. use contact command for more informations.',
+              'Devra .: Dev-dragon, Adel merioua labdelli. find him here: https://www.linkedin.com/in/adel-labdelli-merioua-1a4219209/',
               'Jacob .: https://jacoblockett.com/ or https://github.com/jacoblockett. '
             ],
             hasBuffer: true
