@@ -128,6 +128,10 @@ class Field extends React.Component {
       isMain: true,
       purpose: 'Displays information about what projects medmeri has done in the past.' },
     {
+      command: 'madeby',
+      isMain: true,
+      purpose: 'Displays information about people that made this little portfolio.' },
+    {
       command: 'project',
       isMain: true,
       purpose: 'Launches a specified project in a new tab or separate window.',
@@ -499,6 +503,20 @@ class Field extends React.Component {
         ]
       }));
     }
+    else if (cmd === 'madeby') {
+      return this.setState(state => ({
+        fieldHistory: [ ...state.fieldHistory,
+          {
+            text: [
+              'Medmeri: Sahraoui mohammed Taher Amine.',
+              'Devra  : Which stand for dev-dragon, Adel merioua labdelli. find him here: https://www.linkedin.com/in/adel-labdelli-merioua-1a4219209/',
+              'Jacob  : https://jacoblockett.com/ or https://github.com/jacoblockett. 
+            ],
+            hasBuffer: true
+          }
+        ]
+      }));
+    }
      else if (cmd === 'experience') {
       return this.setState(state => ({
         fieldHistory: [...state.fieldHistory, { text: [
@@ -585,7 +603,7 @@ class Field extends React.Component {
           'Hackthebox: @medmeri',
           'Tryhackme : @medmeri',
           'youtube ..: @_Medmeri',
-          'Discord ..: @medmeri',],
+          'Discord ..: @medmeri'],
           hasBuffer: true }] }));
 
     } else if (cmd === 'project') {
