@@ -128,10 +128,6 @@ class Field extends React.Component {
       isMain: true,
       purpose: 'Displays information about what projects medmeri has done in the past.' },
     {
-      command: 'madeby',
-      isMain: true,
-      purpose: 'Displays information about people that made this little portfolio.' },
-    {
       command: 'project',
       isMain: true,
       purpose: 'Launches a specified project in a new tab or separate window.',
@@ -497,20 +493,6 @@ class Field extends React.Component {
             text: [
               'Hey there!',
               `My name is Medmeri. I'm a cyber security enthusiast, red teamer and CTF player. Type CONTACT if you'd like to get in touch Otherwise, Never forget to wear your smile. It helps brighten up this dark world! (^v^)`,
-            ],
-            hasBuffer: true
-          }
-        ]
-      }));
-    }
-    else if (cmd === 'madeby') {
-      return this.setState(state => ({
-        fieldHistory: [ ...state.fieldHistory,
-          {
-            text: [
-              'Medmeri: Sahraoui mohammed Taher Amine. use contact command for more informations.',
-              'Devra .: Dev-dragon, Adel merioua labdelli. find him here: https://www.linkedin.com/in/adel-labdelli-merioua-1a4219209/',
-              'Jacob .: https://jacoblockett.com/ or https://github.com/jacoblockett. '
             ],
             hasBuffer: true
           }
