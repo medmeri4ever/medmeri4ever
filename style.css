@@ -19,13 +19,13 @@ body {
   font-weight: normal;
   font-size: 50px;
   color:  rgb(35,37,52);
-  filter: drop-shadow(0 0 0.3em #f00);
+  filter: drop-shadow(0 0 0.3em rgb(35,37,52));
   position: absolute;
   top: 35rem;
 }
 .dud {
   color: #f00;
-  filter: drop-shadow(0 0 0.5em  rgb(35,37,52));
+  filter: drop-shadow(0 0 0.5em  #f00);
 }
 
 .wrapper
