@@ -31,7 +31,7 @@ const App = () => {
 };
 const Terminal = ({ theme, setTheme }) => {
   const [maximized, setMaximized] = React.useState(false);
-  const [title, setTitle] = React.useState('Medmeri Terminal');
+  const [title, setTitle] = React.useState('CVE Terminal');
   const handleClose = () => destroyTerminal();
   const handleMinMax = () => {
     setMaximized(!maximized);
@@ -54,13 +54,13 @@ class Field extends React.Component {
     this.state = {
       commandHistory: [],
       commandHistoryIndex: 0,
-      fieldHistory: [{ text: 'Medmeri Terminal' }, { text: 'Type HELP to see the full list of commands.', hasBuffer: true }],
+      fieldHistory: [{ text: 'CVE Terminal' }, { text: 'Type HELP to see the full list of commands.', hasBuffer: true }],
       userInput: '',
       isMobile: false };
 
     this.recognizedCommands = [{
       command: 'help',
-      purpose: 'Provides help information for Medmeri Terminal commands.' },
+      purpose: 'Provides help information for CVE Terminal commands.' },
     {
       command: 'date',
       purpose: 'Displays the current date.' },
@@ -87,10 +87,10 @@ class Field extends React.Component {
       purpose: 'Clears the screen.' },
     {
       command: 'theme',
-      purpose: 'Sets the color scheme of the Medmeri Terminal.',
+      purpose: 'Sets the color scheme of the CVE Terminal.',
       help: [
       'THEME <L|LIGHT|D|DARK> [-s, -save]',
-      'Sets the color scheme of the Medmeri Terminal.',
+      'Sets the color scheme of the CVE Terminal.',
       '',
       'L, LIGHT.................Sets the color scheme to light mode.',
       'D, DARK..................Sets the color scheme to dark mode.',
@@ -99,22 +99,22 @@ class Field extends React.Component {
 
     {
       command: 'exit',
-      purpose: 'Quits the Medmeri Terminal and returns to medmeri\'s portfolio page.' },
+      purpose: 'Quits the CVE Terminal and returns to CVE\'s portfolio page.' },
     {
       command: 'time',
       purpose: 'Displays the current time.' },
     {
       command: 'about',
       isMain: true,
-      purpose: 'Displays basic information about Medmeri.' },
+      purpose: 'Displays basic information about CVE.' },
     {
       command: 'experience',
       isMain: true,
-      purpose: 'Displays information about medmeri\'s experience.' },
+      purpose: 'Displays information about CVE\'s experience.' },
     {
       command: 'skills',
       isMain: true,
-      purpose: 'Displays information about medmeri\'s skills as a developer.' },
+      purpose: 'Displays information about CVE\'s skills as a developer.' },
     {
         command: 'bitmaze',
         isMain: true,
@@ -122,11 +122,11 @@ class Field extends React.Component {
     {
       command: 'contact',
       isMain: true,
-      purpose: 'Displays contact information for medmeri.' },
+      purpose: 'Displays contact information for CVE.' },
     {
       command: 'projects',
       isMain: true,
-      purpose: 'Displays information about what projects medmeri has done in the past.' },
+      purpose: 'Displays information about what projects CVE has done in the past.' },
     {
       command: 'project',
       isMain: true,
@@ -155,12 +155,12 @@ class Field extends React.Component {
 
     {
       command: 'title',
-      purpose: 'Sets the window title for the Medmeri Terminal.',
+      purpose: 'Sets the window title for the CVE Terminal.',
       help: [
       'TITLE <INPUT>',
-      'Sets the window title for the Medmeri Terminal.',
+      'Sets the window title for the CVE Terminal.',
       '',
-      'INPUT....................The title you want to use for the Medmeri Terminal window.'] },
+      'INPUT....................The title you want to use for the CVE Terminal window.'] },
 
     ...['google', 'duckduckgo', 'bing'].map(cmd => {
       const properCase = cmd === 'google' ? 'Google' : cmd === 'duckduckgo' ? 'DuckDuckGo' : 'Bing';
@@ -492,7 +492,7 @@ class Field extends React.Component {
           {
             text: [
               'Hey there!',
-              `My name is Medmeri. I'm a cyber security enthusiast, red teamer and CTF player. Type CONTACT if you'd like to get in touch Otherwise, Never forget to wear your smile. It helps brighten up this dark world! (^v^)`,
+              `My name is CVE. I'm a cyber security enthusiast, red teamer and CTF player. Type CONTACT if you'd like to get in touch Otherwise, Never forget to wear your smile. It helps brighten up this dark world! (^v^)`,
             ],
             hasBuffer: true
           }
@@ -578,14 +578,14 @@ class Field extends React.Component {
     } else if (cmd === 'contact') {
       return this.setState(state => ({
         fieldHistory: [...state.fieldHistory, { text: [
-          'Email ....: medmeri@outlook.com',
+          'Email ....: CVE@outlook.com',
           'Server ...: bitmaze community',
-          'LinkedIn .: @medmeri',
-          'GitHub ...: @medmeri4ever',
-          'Hackthebox: @medmeri',
-          'Tryhackme : @medmeri',
-          'youtube ..: @_Medmeri',
-          'Discord ..: @medmeri'],
+          'LinkedIn .: @CVE',
+          'GitHub ...: @CVE4ever',
+          'Hackthebox: @CVE',
+          'Tryhackme : @CVE',
+          'youtube ..: @_CVE',
+          'Discord ..: @CVE'],
           hasBuffer: true }] }));
 
     } else if (cmd === 'project') {
@@ -648,7 +648,7 @@ class Field extends React.Component {
     else if (cmd === 'title') {
       return this.setState(state => ({
         fieldHistory: [...state.fieldHistory, {
-          text: `Set the Medmeri Terminal title to ${params.length > 0 ? params.join(' ') : '<BLANK>'}`,
+          text: `Set the CVE Terminal title to ${params.length > 0 ? params.join(' ') : '<BLANK>'}`,
           hasBuffer: true }] }),
 
       () => this.props.setTitle(params.length > 0 ? params.join(' ') : ''));
@@ -712,7 +712,7 @@ class Field extends React.Component {
 
 const Text = ({ input, isCommand, isError, hasBuffer }) => /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/
 React.createElement("div", null,
-isCommand && /*#__PURE__*/React.createElement("div", { id: "query" }, "medmeri@hacking:~$"), /*#__PURE__*/
+isCommand && /*#__PURE__*/React.createElement("div", { id: "query" }, "CVE@hacking:~$"), /*#__PURE__*/
 React.createElement("span", { className: !isCommand && isError ? 'error' : '' }, input)),
 
 hasBuffer && /*#__PURE__*/React.createElement("div", null));
@@ -722,7 +722,7 @@ input.map(s => /*#__PURE__*/React.createElement(Text, { input: s, isError: isErr
 hasBuffer && /*#__PURE__*/React.createElement("div", null));
 
 const UserText = ({ input, theme }) => /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/
-React.createElement("div", { id: "query" }, "medmeri@hacking:~$"), /*#__PURE__*/
+React.createElement("div", { id: "query" }, "CVE@hacking:~$"), /*#__PURE__*/
 React.createElement("span", null, input), /*#__PURE__*/
 React.createElement("div", { id: "cursor", style: theme }));
 
