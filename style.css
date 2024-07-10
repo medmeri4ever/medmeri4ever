@@ -19,13 +19,13 @@ body {
   font-weight: normal;
   font-size: 50px;
   color: rgb(255, 255, 255);
-  filter: drop-shadow(0 0 0.3em #a0f73d);
+  filter: drop-shadow(0 0 0.3em #f00);
   position: absolute;
   top: 35rem;
 }
 .dud {
-  color: #a0f73d;
-  filter: drop-shadow(0 0 0.5em #a0f73d);
+  color: #f00;
+  filter: drop-shadow(0 0 0.5em #f00);
 }
 
 .wrapper
@@ -108,7 +108,7 @@ ul li a:hover span:nth-child(3){
   transform: scaleX(0);
   transform-origin: right;
   transition: transform .5s;
-  background: #a0f73d;
+  background: #f00;
 }
 ul li a span:nth-child(2),
 ul li a span:nth-child(4){
@@ -126,7 +126,7 @@ ul li a:hover span:nth-child(2){
   transform: scaleY(1);
   transform-origin: top;
   transition: transform .5s;
-  background: #a0f73d;
+  background: #f00;
 }
 ul li a span:nth-child(4){
   top: 0;
@@ -138,9 +138,9 @@ ul li a:hover span:nth-child(4){
   transform: scaleY(1);
   transform-origin: bottom;
   transition: transform .5s;
-  background: #a0f73d;
+  background: #f00;
 }
 
 ul li a:hover {
-  color: #a0f73d;
+  color: #f00;
 }
