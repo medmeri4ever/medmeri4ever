@@ -134,12 +134,6 @@ class Field extends React.Component {
       help: [
       'PROJECT <TITLE>',
       'Launches a specified project in a new tab or separate window.',
-      'List of projects currently include:',
-      'Minesweeper',
-      'PuniUrl',
-      'Taggen',
-      'Forum',
-      'Simon',
       '',
       'TITLE....................The title of the project you want to view.'] },
       {
@@ -578,14 +572,13 @@ class Field extends React.Component {
     } else if (cmd === 'contact') {
       return this.setState(state => ({
         fieldHistory: [...state.fieldHistory, { text: [
-          'Email ....: CVE@outlook.com',
+          'Email ....: mohammed.itsecur1ty@gmail.com',
           'Server ...: bitmaze community',
-          'LinkedIn .: @CVE',
-          'GitHub ...: @CVE4ever',
-          'Hackthebox: @CVE',
-          'Tryhackme : @CVE',
-          'youtube ..: @_CVE',
-          'Discord ..: @CVE'],
+          'LinkedIn .: @CVE180396',
+          'GitHub ...: @CVE-1803-96',
+          'Hackthebox: @CVE180396',
+          'Tryhackme : @CVE180396',
+          'Discord ..: @CVE-1803-96'],
           hasBuffer: true }] }));
 
     } else if (cmd === 'project') {
