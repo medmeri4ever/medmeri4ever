@@ -57,7 +57,7 @@ const phrases = [
 'MCs. NSSI',
 'Red Teamer',
 'Ethical Hacker \ { 🏴‍☠️ }',
-'@medmeri'];
+'@CVE-1803-96'];
 
 
 const el = document.querySelector('.text-change');
