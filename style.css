@@ -1,7 +1,7 @@
 @import 'https://fonts.googleapis.com/css2?family=Goldman&display=swap';
 html,
 body {
-  background: rgb(51, 52, 68);
+  background: rgb(5, 5, 5);
   height: 100%;
   overflow: hidden;
 }
@@ -97,7 +97,7 @@ ul li a:hover span:nth-child(1){
   transform: scaleX(0);
   transform-origin: left;
   transition: transform .5s;
-  background: #f00;
+  background: #a0f73d;
 }
 ul li a span:nth-child(3){
   bottom: 0;
@@ -108,7 +108,7 @@ ul li a:hover span:nth-child(3){
   transform: scaleX(0);
   transform-origin: right;
   transition: transform .5s;
-  background: #f00;
+  background: #a0f73d;
 }
 ul li a span:nth-child(2),
 ul li a span:nth-child(4){
@@ -126,7 +126,7 @@ ul li a:hover span:nth-child(2){
   transform: scaleY(1);
   transform-origin: top;
   transition: transform .5s;
-  background: #f00;
+  background: #a0f73d;
 }
 ul li a span:nth-child(4){
   top: 0;
@@ -138,9 +138,9 @@ ul li a:hover span:nth-child(4){
   transform: scaleY(1);
   transform-origin: bottom;
   transition: transform .5s;
-  background: #f00;
+  background: #a0f73d;
 }
 
 ul li a:hover {
-  color: #f00;
+  color: #a0f73d;
 }
