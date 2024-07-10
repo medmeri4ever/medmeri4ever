@@ -1,7 +1,7 @@
 @import 'https://fonts.googleapis.com/css2?family=Goldman&display=swap';
 html,
 body {
-  background: rgb(5, 5, 5);
+  background: rgb(10, 10, 10);
   height: 100%;
   overflow: hidden;
 }
@@ -11,21 +11,21 @@ body {
   justify-content: center;
   align-items: center;
   display: flex;
-  background: rgb(51, 52, 68);
+  background: rgb(10, 10, 10);
   
 }
 .text-change {
   font-family: 'Goldman', monospace;
   font-weight: normal;
   font-size: 50px;
-  color: rgb(34, 35, 51);
+  color: rgb(255, 255, 255);
   filter: drop-shadow(0 0 0.3em rgb(34, 35, 69));
   position: absolute;
   top: 35rem;
 }
 .dud {
-  color: rgba(200,30,30,0.8);
-  filter: drop-shadow(0 0 0.5em #f00);
+  color: rgba(200,200,200,0.8);
+  filter: drop-shadow(0 0 0.5em #a0f73d);
 }
 
 .wrapper
